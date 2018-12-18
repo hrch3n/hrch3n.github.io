@@ -82,20 +82,20 @@ To remove this section, either delete content/home/teaching.md or edit the front
     </item>
     
     <item>
-      <title>Tags</title>
-      <link>https://hrch3n.github.io/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 +0800</pubDate>
-      
-      <guid>https://hrch3n.github.io/home/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Contact</title>
       <link>https://hrch3n.github.io/home/contact/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
       
       <guid>https://hrch3n.github.io/home/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>https://hrch3n.github.io/home/tags/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0800</pubDate>
+      
+      <guid>https://hrch3n.github.io/home/tags/</guid>
       <description></description>
     </item>
     
