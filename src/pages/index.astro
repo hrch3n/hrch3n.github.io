@@ -2,6 +2,17 @@
 const name = "Eric (Haoran) Chen";
 const tagline = "AI Platforms in Healthcare & Life Sciences";
 const lastUpdated = "2025-12-29";
+
+const links = {
+  linkedin: "https://www.linkedin.com/in/chen-haoran/",
+  scholar: "https://scholar.google.com/citations?user=_HebgtMAAAAJ&hl=en&oi=sra",
+  email: "contact@ericchen.ai",
+};
+
+const live = {
+  pecan: "https://pecan.stjude.cloud/histology",
+  comet: "https://comet.stjude.org",
+};
 ---
 
 <!doctype html>
@@ -36,6 +47,7 @@ const lastUpdated = "2025-12-29";
       .links { margin-top: 8px; font-size: 14px; }
       .links a { margin-right: 12px; }
       .footer { color: var(--muted); font-size: 13px; margin-top: 30px; }
+      .note { color: var(--muted); font-size: 14px; margin-top: 10px; }
     </style>
   </head>
 
@@ -46,15 +58,14 @@ const lastUpdated = "2025-12-29";
 
       <p>
         I design and deploy AI-powered platforms in healthcare and life sciences,
-        with a focus on turning complex biomedical workflows into reliable,
-        production-ready systems used by scientists and clinicians.
+        turning complex biomedical workflows into reliable, production-ready systems
+        used by scientists and clinicians.
       </p>
 
       <p class="links">
-        <a href="YOUR_LINKEDIN">LinkedIn</a>
-        <a href="https://github.com/hrch3n">GitHub</a>
-        <a href="YOUR_SCHOLAR">Google Scholar</a>
-        <a href="mailto:career@ericchen.ai">career@ericchen.ai</a>
+        <a href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href={links.scholar} target="_blank" rel="noreferrer">Google Scholar</a>
+        <a href={`mailto:${links.email}`}>{links.email}</a>
       </p>
 
       <hr />
@@ -82,7 +93,7 @@ const lastUpdated = "2025-12-29";
             <li>Worked closely with pathologists, scientists, and platform engineers to deliver a usable product</li>
           </ul>
           <p class="links">
-            <a href="PECAN_LINK">Live site</a>
+            <a href={live.pecan} target="_blank" rel="noreferrer">Live site</a>
           </p>
         </div>
 
@@ -97,7 +108,7 @@ const lastUpdated = "2025-12-29";
             <li>Emphasized usability, performance, and long-term maintainability</li>
           </ul>
           <p class="links">
-            <a href="https://comet.stjude.org">Live site</a>
+            <a href={live.comet} target="_blank" rel="noreferrer">Live site</a>
           </p>
         </div>
 
@@ -110,8 +121,54 @@ const lastUpdated = "2025-12-29";
             <li>Focused on explaining design tradeoffs rather than feature completeness</li>
           </ul>
           <p class="links">
-            <a href="PATHSEARCH_LITE_REPO_LINK">GitHub repo (when ready)</a>
+            <a href="PATHSEARCH_LITE_REPO_LINK" target="_blank" rel="noreferrer">Repo (when ready)</a>
           </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <h2>Selected Open-Source Tools (PhD)</h2>
+      <p class="note">
+        A few research-grade tools I built during my PhD. These are focused on clarity and reproducibility,
+        with detailed READMEs and documentation.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3><a href="REPO_1_LINK" target="_blank" rel="noreferrer">REPO_1_NAME</a></h3>
+          <div class="meta">One-line description of what it does (and for whom)</div>
+          <ul>
+            <li>Why it mattered / what it enabled (result, workflow, adoption, etc.)</li>
+            <li>Technical highlights (algorithm, pipeline, packaging, integration)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3><a href="REPO_2_LINK" target="_blank" rel="noreferrer">REPO_2_NAME</a></h3>
+          <div class="meta">One-line description of what it does (and for whom)</div>
+          <ul>
+            <li>Why it mattered / what it enabled</li>
+            <li>Technical highlights</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3><a href="REPO_3_LINK" target="_blank" rel="noreferrer">REPO_3_NAME</a></h3>
+          <div class="meta">One-line description of what it does (and for whom)</div>
+          <ul>
+            <li>Why it mattered / what it enabled</li>
+            <li>Technical highlights</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3><a href="REPO_4_LINK" target="_blank" rel="noreferrer">REPO_4_NAME</a></h3>
+          <div class="meta">One-line description of what it does (and for whom)</div>
+          <ul>
+            <li>Why it mattered / what it enabled</li>
+            <li>Technical highlights</li>
+          </ul>
         </div>
       </div>
 
@@ -127,12 +184,10 @@ const lastUpdated = "2025-12-29";
       <hr />
 
       <h2>Contact</h2>
-      <p>
-        For technical discussions, collaborations, or questions about the systems above:
-      </p>
+      <p>For technical discussions, collaborations, or questions about the systems above:</p>
       <p class="links">
-        <a href="mailto:career@ericchen.ai">career@ericchen.ai</a>
-        <a href="YOUR_LINKEDIN">LinkedIn</a>
+        <a href={`mailto:${links.email}`}>{links.email}</a>
+        <a href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
       </p>
 
       <div class="footer">Last updated: {lastUpdated}</div>
