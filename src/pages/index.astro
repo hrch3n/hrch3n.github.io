@@ -10,7 +10,11 @@ const lastUpdated = "2025-12-29";
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{name} — {tagline}</title>
-    <meta name="description" content="Customer-facing AI & platform work in healthcare and life sciences. Target roles: FAS/FAE, Solutions Consultant/Sales Engineer, Solutions Architect." />
+
+    <meta
+      name="description"
+      content="Designing and deploying AI-powered platforms for healthcare and life sciences. Public systems, real users, production constraints."
+    />
     <meta name="robots" content="index,follow" />
 
     <style>
@@ -21,8 +25,6 @@ const lastUpdated = "2025-12-29";
       .sub { color: var(--muted); margin: 0 0 18px; }
       a { color: var(--link); text-decoration: none; }
       a:hover { text-decoration: underline; }
-      .chips { display:flex; flex-wrap:wrap; gap:8px; margin: 14px 0 0; }
-      .chip { border:1px solid var(--line); padding: 6px 10px; border-radius: 999px; font-size: 13px; color: var(--muted); }
       hr { border:0; border-top:1px solid var(--line); margin: 28px 0; }
       h2 { font-size: 18px; margin: 0 0 10px; }
       h3 { font-size: 16px; margin: 18px 0 6px; }
@@ -40,15 +42,13 @@ const lastUpdated = "2025-12-29";
   <body>
     <div class="wrap">
       <h1>{name}</h1>
-      <p class="sub">Customer-Facing AI & Platform Roles · {tagline}</p>
+      <p class="sub">{tagline}</p>
 
-      <p><strong>Positioning:</strong> I design and deploy AI-powered platforms in healthcare and life sciences, translating complex biomedical workflows into production-ready systems used by scientists, clinicians, and engineers.</p>
-
-      <div class="chips">
-        <div class="chip">Field Application Scientist / Engineer</div>
-        <div class="chip">Solutions Consultant / Sales Engineer</div>
-        <div class="chip">Healthcare & Life Sciences Solutions Architect</div>
-      </div>
+      <p>
+        I design and deploy AI-powered platforms in healthcare and life sciences,
+        with a focus on turning complex biomedical workflows into reliable,
+        production-ready systems used by scientists and clinicians.
+      </p>
 
       <p class="links">
         <a href="YOUR_LINKEDIN">LinkedIn</a>
@@ -59,12 +59,12 @@ const lastUpdated = "2025-12-29";
 
       <hr />
 
-      <h2>What I Actually Do</h2>
+      <h2>What I Work On</h2>
       <ul>
-        <li>Turn ambiguous scientific requirements into concrete system architectures</li>
-        <li>Build and deploy interactive tools used by real users (pathologists, researchers)</li>
-        <li>Bridge research, engineering, and customer communication</li>
-        <li>Explain complex AI systems clearly to technical and non-technical stakeholders</li>
+        <li>End-to-end design of AI systems under real scientific and operational constraints</li>
+        <li>Interactive platforms that support decision-making and exploratory analysis</li>
+        <li>Bridging research, engineering, and user needs to ship usable tools</li>
+        <li>Communicating complex system behavior clearly to diverse stakeholders</li>
       </ul>
 
       <hr />
@@ -72,14 +72,14 @@ const lastUpdated = "2025-12-29";
       <h2>Selected Platforms & Systems</h2>
       <div class="grid">
         <div class="card">
-          <h3>PeCan — St. Jude Cloud (Digital Pathology & Histology Exploration)</h3>
-          <div class="meta">Public platform · Used by researchers and clinicians</div>
+          <h3>PeCan — St. Jude Cloud</h3>
+          <div class="meta">Digital pathology & histology exploration · Public platform</div>
           <img class="thumb" src="/img/pecan.png" alt="PeCan screenshot" />
           <ul>
-            <li>Led architecture and implementation of a foundation-model–powered visual search system for whole-slide pathology images</li>
-            <li>Enabled retrieval of visually similar cases from 3,000+ WSIs in seconds to improve diagnostic workflow efficiency</li>
-            <li>Designed the system end-to-end: model inference, embedding search, backend services, and interactive UI</li>
-            <li>Bridged pathologists, domain scientists, and platform engineers to ship a usable product</li>
+            <li>Led architecture and implementation of a foundation-model–based visual search system for whole-slide pathology images</li>
+            <li>Enabled retrieval of visually similar cases from 3,000+ WSIs in seconds</li>
+            <li>Designed the full system stack: model inference, embedding search, backend services, and interactive UI</li>
+            <li>Worked closely with pathologists, scientists, and platform engineers to deliver a usable product</li>
           </ul>
           <p class="links">
             <a href="PECAN_LINK">Live site</a>
@@ -87,14 +87,14 @@ const lastUpdated = "2025-12-29";
         </div>
 
         <div class="card">
-          <h3>COMET — Interactive Multimodal Data Portal</h3>
-          <div class="meta">Production portal · Multi-million-dollar initiative</div>
+          <h3>COMET — Multimodal Data Portal</h3>
+          <div class="meta">Production system · Cross-disciplinary initiative</div>
           <img class="thumb" src="/img/comet.png" alt="COMET screenshot" />
           <ul>
             <li>Designed and delivered an interactive web platform integrating imaging and molecular data</li>
-            <li>Enabled exploratory analysis and hypothesis generation across multiple biomedical modalities</li>
-            <li>Defined requirements and delivery milestones with cross-functional teams and leadership</li>
-            <li>Focused on usability, performance, and maintainability</li>
+            <li>Supported exploratory analysis and hypothesis generation across modalities</li>
+            <li>Defined requirements and delivery milestones with cross-functional teams</li>
+            <li>Emphasized usability, performance, and long-term maintainability</li>
           </ul>
           <p class="links">
             <a href="https://comet.stjude.org">Live site</a>
@@ -102,12 +102,12 @@ const lastUpdated = "2025-12-29";
         </div>
 
         <div class="card">
-          <h3>PathSearch-lite (Coming)</h3>
-          <div class="meta">Shareable demo for customer conversations</div>
+          <h3>PathSearch-lite (In progress)</h3>
+          <div class="meta">Lightweight demo for system design discussions</div>
           <ul>
-            <li>Lightweight version of a pathology image search pipeline</li>
-            <li>Built as a demo artifact for explaining design tradeoffs and deployment patterns</li>
-            <li>Intended for walkthroughs, customer demos, and technical interviews</li>
+            <li>Simplified pathology image search pipeline derived from production systems</li>
+            <li>Designed as a shareable artifact for architectural walkthroughs and demos</li>
+            <li>Focused on explaining design tradeoffs rather than feature completeness</li>
           </ul>
           <p class="links">
             <a href="PATHSEARCH_LITE_REPO_LINK">GitHub repo (when ready)</a>
@@ -127,7 +127,9 @@ const lastUpdated = "2025-12-29";
       <hr />
 
       <h2>Contact</h2>
-      <p>If you want someone who can <strong>both build the system and explain it to your customers</strong>, let’s talk.</p>
+      <p>
+        For technical discussions, collaborations, or questions about the systems above:
+      </p>
       <p class="links">
         <a href="mailto:career@ericchen.ai">career@ericchen.ai</a>
         <a href="YOUR_LINKEDIN">LinkedIn</a>
@@ -137,4 +139,3 @@ const lastUpdated = "2025-12-29";
     </div>
   </body>
 </html>
-
