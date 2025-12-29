@@ -1,0 +1,140 @@
+---
+const name = "Eric (Haoran) Chen";
+const tagline = "AI Platforms in Healthcare & Life Sciences";
+const lastUpdated = "2025-12-29";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{name} — {tagline}</title>
+    <meta name="description" content="Customer-facing AI & platform work in healthcare and life sciences. Target roles: FAS/FAE, Solutions Consultant/Sales Engineer, Solutions Architect." />
+    <meta name="robots" content="index,follow" />
+
+    <style>
+      :root { --fg:#111; --muted:#555; --line:#e6e6e6; --bg:#fff; --link:#0b5fff; }
+      body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+      .wrap { max-width: 920px; margin: 0 auto; padding: 52px 20px; }
+      h1 { font-size: 36px; line-height: 1.12; margin: 0 0 8px; letter-spacing: -0.01em; }
+      .sub { color: var(--muted); margin: 0 0 18px; }
+      a { color: var(--link); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .chips { display:flex; flex-wrap:wrap; gap:8px; margin: 14px 0 0; }
+      .chip { border:1px solid var(--line); padding: 6px 10px; border-radius: 999px; font-size: 13px; color: var(--muted); }
+      hr { border:0; border-top:1px solid var(--line); margin: 28px 0; }
+      h2 { font-size: 18px; margin: 0 0 10px; }
+      h3 { font-size: 16px; margin: 18px 0 6px; }
+      ul { margin: 8px 0 0 20px; }
+      .grid { display:grid; grid-template-columns: 1fr; gap: 18px; }
+      .card { border:1px solid var(--line); border-radius: 14px; padding: 16px; }
+      .meta { color: var(--muted); font-size: 13px; margin-top: 4px; }
+      .thumb { width:100%; border:1px solid var(--line); border-radius: 10px; margin: 10px 0 6px; }
+      .links { margin-top: 8px; font-size: 14px; }
+      .links a { margin-right: 12px; }
+      .footer { color: var(--muted); font-size: 13px; margin-top: 30px; }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1>{name}</h1>
+      <p class="sub">Customer-Facing AI & Platform Roles · {tagline}</p>
+
+      <p><strong>Positioning:</strong> I design and deploy AI-powered platforms in healthcare and life sciences, translating complex biomedical workflows into production-ready systems used by scientists, clinicians, and engineers.</p>
+
+      <div class="chips">
+        <div class="chip">Field Application Scientist / Engineer</div>
+        <div class="chip">Solutions Consultant / Sales Engineer</div>
+        <div class="chip">Healthcare & Life Sciences Solutions Architect</div>
+      </div>
+
+      <p class="links">
+        <a href="YOUR_LINKEDIN">LinkedIn</a>
+        <a href="https://github.com/hrch3n">GitHub</a>
+        <a href="YOUR_SCHOLAR">Google Scholar</a>
+        <a href="mailto:career@ericchen.ai">career@ericchen.ai</a>
+      </p>
+
+      <hr />
+
+      <h2>What I Actually Do</h2>
+      <ul>
+        <li>Turn ambiguous scientific requirements into concrete system architectures</li>
+        <li>Build and deploy interactive tools used by real users (pathologists, researchers)</li>
+        <li>Bridge research, engineering, and customer communication</li>
+        <li>Explain complex AI systems clearly to technical and non-technical stakeholders</li>
+      </ul>
+
+      <hr />
+
+      <h2>Selected Platforms & Systems</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>PeCan — St. Jude Cloud (Digital Pathology & Histology Exploration)</h3>
+          <div class="meta">Public platform · Used by researchers and clinicians</div>
+          <img class="thumb" src="/img/pecan.png" alt="PeCan screenshot" />
+          <ul>
+            <li>Led architecture and implementation of a foundation-model–powered visual search system for whole-slide pathology images</li>
+            <li>Enabled retrieval of visually similar cases from 3,000+ WSIs in seconds to improve diagnostic workflow efficiency</li>
+            <li>Designed the system end-to-end: model inference, embedding search, backend services, and interactive UI</li>
+            <li>Bridged pathologists, domain scientists, and platform engineers to ship a usable product</li>
+          </ul>
+          <p class="links">
+            <a href="PECAN_LINK">Live site</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>COMET — Interactive Multimodal Data Portal</h3>
+          <div class="meta">Production portal · Multi-million-dollar initiative</div>
+          <img class="thumb" src="/img/comet.png" alt="COMET screenshot" />
+          <ul>
+            <li>Designed and delivered an interactive web platform integrating imaging and molecular data</li>
+            <li>Enabled exploratory analysis and hypothesis generation across multiple biomedical modalities</li>
+            <li>Defined requirements and delivery milestones with cross-functional teams and leadership</li>
+            <li>Focused on usability, performance, and maintainability</li>
+          </ul>
+          <p class="links">
+            <a href="https://comet.stjude.org">Live site</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>PathSearch-lite (Coming)</h3>
+          <div class="meta">Shareable demo for customer conversations</div>
+          <ul>
+            <li>Lightweight version of a pathology image search pipeline</li>
+            <li>Built as a demo artifact for explaining design tradeoffs and deployment patterns</li>
+            <li>Intended for walkthroughs, customer demos, and technical interviews</li>
+          </ul>
+          <p class="links">
+            <a href="PATHSEARCH_LITE_REPO_LINK">GitHub repo (when ready)</a>
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <h2>Background</h2>
+      <ul>
+        <li>PhD, Computational Biology — Carnegie Mellon University</li>
+        <li>Senior Bioinformatics Research Scientist — St. Jude Children’s Research Hospital</li>
+        <li>7+ years building AI/ML systems across digital pathology, imaging, and multimodal biology</li>
+      </ul>
+
+      <hr />
+
+      <h2>Contact</h2>
+      <p>If you want someone who can <strong>both build the system and explain it to your customers</strong>, let’s talk.</p>
+      <p class="links">
+        <a href="mailto:career@ericchen.ai">career@ericchen.ai</a>
+        <a href="YOUR_LINKEDIN">LinkedIn</a>
+      </p>
+
+      <div class="footer">Last updated: {lastUpdated}</div>
+    </div>
+  </body>
+</html>
+
