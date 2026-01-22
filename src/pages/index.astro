@@ -79,39 +79,52 @@ const live = {
 
       <hr />
 
-      <h2>Selected Platforms & Systems</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Pathology Visual Search Engine - PeCan Histology (St. Jude Cloud)</h3>
-          <div class="meta">Digital pathology · foundation-model–powered visual similarity search · public portal for case exploration</div>
-          <img class="thumb" src="/img/pecan-2026.png" alt="PeCan screenshot" />
-          <ul>
-            <li>Owned backend architecture for embedding generation and large-scale similarity retrieval for whole-slide images</li>
-            <li>Integrated foundation-model embeddings with a low-latency search service supporting interactive exploration</li>
-            <li>Partnered with the St. Jude Cloud team to translate user needs into interface requirements under operational constraints</li>
-            <li>Delivered a production feature surfaced through PeCan’s histology experience (public)</li>
-          </ul>
-          <p class="links">
-            <a href={live.pecan} target="_blank" rel="noreferrer">Live site</a>
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Interactive Multimodal Data Explorer - COMET Viewer</h3>
-          <div class="meta">Multimodal biomedical data integration · interactive visualization · cross-disciplinary initiative</div>
-          <img class="thumb" src="/img/comet-2026.png" alt="COMET screenshot" />
-          <ul>
-            <li>Designed and delivered an interactive web portal for exploring linked imaging and molecular datasets</li>
-            <li>Defined APIs and query interfaces that enable flexible cross-modal queries and interactive visual exploration</li>
-            <li>Partnered with domain scientists to shape exploratory analysis needs into accurate interface features</li>
-            <li>Balanced usability, performance, and maintainability to ensure long-term adoption by research teams</li>
-          </ul>
-          <p class="links">
-            <a href={live.comet} target="_blank" rel="noreferrer">Live site</a>
-          </p>
-        </div>
-
+    <h2>Selected Platforms & Systems</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Pathology Visual Search Engine — PeCan Histology (St. Jude Cloud)</h3>
+        <div class="meta">Digital pathology · foundation-model–powered visual similarity search · public portal for case exploration</div>
+        <img class="thumb" src="/img/pecan-2026.png" alt="PeCan screenshot" />
+        <ul>
+          <li>Owned backend architecture for embedding generation and large-scale similarity retrieval for whole-slide images</li>
+          <li>Integrated foundation-model embeddings with a low-latency search service supporting interactive exploration</li>
+          <li>Partnered with the St. Jude Cloud team to translate user needs into interface requirements under operational constraints</li>
+          <li>Delivered a production feature surfaced through PeCan’s histology experience (public)</li>
+        </ul>
+        <p class="links">
+          <a href={live.pecan} target="_blank" rel="noreferrer">Live site</a>
+        </p>
       </div>
+
+      <div class="card">
+        <h3>Interactive Multimodal Data Explorer — COMET Viewer</h3>
+        <div class="meta">Multimodal biomedical data integration · interactive visualization · cross-disciplinary initiative</div>
+        <img class="thumb" src="/img/comet-2026.png" alt="COMET screenshot" />
+        <ul>
+          <li>Designed and delivered an interactive web portal for exploring linked imaging and molecular datasets</li>
+          <li>Defined APIs and query interfaces that enable flexible cross-modal queries and interactive visual exploration</li>
+          <li>Partnered with domain scientists to ensure accurate representation of exploratory analysis workflows in the interface</li>
+          <li>Balanced usability, performance, and maintainability to ensure long-term adoption by research teams</li>
+        </ul>
+        <p class="links">
+          <a href={live.comet} target="_blank" rel="noreferrer">Live site</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Reference Architecture — Secure Pathology AI (On-Prem ↔ Cloud)</h3>
+        <div class="meta">Reference design · security boundaries & auditability · retrieval + summarization workflow</div>
+        <img class="thumb" src="/img/aws.png" alt="Reference architecture diagram for secure pathology AI" />
+        <div class="meta">
+          Conceptual reference architecture illustrating data flow and security boundaries; adapted from patterns I’ve used in production systems.
+        </div>
+        <ul>
+          <li>Highlights on-prem ingestion, private cloud networking, and least-privilege access controls</li>
+          <li>Separates retrieval (embeddings + vector search) from summarization to manage risk and latency</li>
+          <li>Emphasizes auditability: structured logs, redaction, and operational monitoring</li>
+        </ul>
+      </div>
+    </div>
 
 
       <hr />
